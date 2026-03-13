@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{blindtext}
+\setlength{\columnsep}{15pt}
+\setlength{\columnseprule}{0.8pt}
+\begin{document}
+\tableofcontents
+\section{Wentao Guo}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3]{Stefan}
+\caption{Wentao Guo}
+\end{figure}
+\newpage
+\section{Table Setting}
+
+\begin{enumerate}%create numbered list
+\item Stefan \\
+\item Yancy
+\item Vincint
+\begin{enumerate}% 2nd layer nested list
+\item ppp
+\item ggg
+\begin{enumerate}% 3rd layer nested list
+\item X
+\item T
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+\begin{itemize}
+\item [($\$$)]A
+\item [($\star$)]B
+\item C
+\end{itemize}
+
+\begin{description}%create a list without marker
+\item Description 1
+\item Description 2
+\end{description}
+
+\begin{trivlist}%create a list without marker and indantation
+\item Item 1
+\item Item 2
+\end{trivlist}
+
+\newpage
+\subsection{Ming Zhen Tan Xue Yuan}
+\subsubsection{hhh}%no more subsubsubsection
+
+
+\begin{eqnarray}
+f(x) & = & \ln(x) \label{eqn2} \\
+f^{-1}(x) & = & e^x
+\end{eqnarray}
+\textit{The} above \textbf{equation} (\ref{eqn1}) is a quadratic euqation, and equation (\ref{eqn2}) \footnote{can be shorted as }is a logarithmic function.\\
+
+To create  a function in \LaTeX,\, we use \textbackslash\texttt{frac}\{\}\{\}\\
+$x \in \mathbb {R} $
+
+\newpage
+%multi-column environment
+
+%you have to include blindtest package in the preamble
+%you have to include multicols package
+\begin{multicols}{3}
+\flushleft\noindent\blindtext\\
+\blindtext
+\end{multicols}
+\end{document}
