@@ -1,0 +1,69 @@
+\documentclass[handout]{beamer}
+\setbeamertemplate{caption}[numbered] %ask AI any other similar command gives you the same output.
+\usepackage{graphicx}
+\title{My First Beamer Presentation}
+\author{Wentao}
+\date{\today}
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}
+\tableofcontents
+\end{frame}
+%========slide 1 ========
+\section{Beginning}
+\begin{frame}
+\frametitle{Silde 1}
+Everytime I close my eyes,
+\end{frame}
+
+%========slide 2 BLOCK environment========
+\section{Block Environment}
+\begin{frame}{Block environment}
+\begin{block}{Importane Notice}
+You can use block environment to show some important thing.
+\end{block}
+
+\begin{alertblock}{Causion}
+Even if it is important, do not abuse it.
+\end{alertblock}
+\end{frame}
+
+%========slide 3 Column environment========
+\section{Column Environment}
+\begin{frame}{Column Environment}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3]{UoNlogo}
+\caption{Logo of University}\label{pic1}
+\end{figure}
+\column{0.5\textwidth}
+The figure on the left is the logo of University of nottingham.
+\end{columns}
+\end{frame}
+
+%========slide 4 Hyperlinks========
+\section{Hyperlinks}
+\begin{frame}{Hyperlinks}
+If you want to Knows the Logo, you can click on \hyperlink{pic1}{here}
+\end{frame}
+
+%========slide 5 Animation Effect========
+\section{Animation Effect}
+\begin{frame}{Animation Effect}
+\section{Listing environment}
+\begin{enumerate}% create numbered list
+\item Vegetables
+\item Fruits
+\begin{enumerate}% 1st layer nested list
+\item Bananas
+\item Apples
+
+\end{enumerate}
+\end{enumerate}
+\end{frame}
+
+\end{document}
