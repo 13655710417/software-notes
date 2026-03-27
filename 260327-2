@@ -1,6 +1,7 @@
 \documentclass[handout]{beamer}
 \setbeamertemplate{caption}[numbered] %ask AI any other similar command gives you the same output.
 \usepackage{graphicx}
+\usetheme{madrid}
 \title{My First Beamer Presentation}
 \author{Wentao}
 \date{\today}
